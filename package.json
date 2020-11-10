@@ -1,0 +1,19 @@
+{
+  "name": "js-challenge",
+  "version": "1.0.0",
+  "description": "A Javascript challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "nodemon index.js"
+  },
+  "author": "Ramiro Estrella",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}
