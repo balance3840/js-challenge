@@ -1,5 +1,9 @@
 const fs = require('fs')
 
+/**
+ * @param  {array} arr Original array
+ * @param  {string} key Key to filter
+ */
 const getUniqueArray = (arr, key) => arr.reduce((acc, current) => {
     const x = acc.find(item => item[key] === current[key])
     if (!x) {
@@ -9,6 +13,9 @@ const getUniqueArray = (arr, key) => arr.reduce((acc, current) => {
     }
 }, [])
 
+/**
+ * @param  {string} path Local path to file
+ */
 const readJsonFile = (path) => new Promise((resolve) => fs.readFile(path, 'utf8', (_, data) => resolve(data)))
     .then((data) => JSON.parse(data))
     .then((data) => data.payload)

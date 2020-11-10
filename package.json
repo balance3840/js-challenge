@@ -4,16 +4,19 @@
   "description": "A Javascript challenge",
   "main": "index.js",
   "scripts": {
-    "test": "npm test",
+    "test": "mocha ./tests/{*,**/*,**/**/*,**/**/**/*,**/**/**/**/*}.spec.js",
     "start": "nodemon index.js"
   },
   "author": "Ramiro Estrella",
   "license": "ISC",
   "devDependencies": {
+    "mocha": "^3.4.2",
+    "chai": "^4.2.0",
     "nodemon": "^2.0.6"
   },
   "dependencies": {
     "ejs": "^3.1.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "ical-generator": "^1.15.1"
   }
 }
